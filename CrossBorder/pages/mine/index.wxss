@@ -1,0 +1,148 @@
+/* pages/mine/index.wxss */
+
+.header {
+  width: 100%;
+  height: 300rpx;
+  /* background-image: linear-gradient(#ff9700, #ed1c24); */
+  background-color: #ffa500;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+.barTittle {
+  position: absolute;
+  left: 300rpx;
+  top: 52rpx;
+  font-size: 32rpx;
+  color: #fff;
+  width: 150rpx;
+  height: 56rpx;
+  /* border: 1rpx solid red; */
+}
+
+.userInfo {
+  position: absolute;
+  left: 32rpx;
+  top: 140rpx;
+  /* buttom:32rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.userAvatarUrl {
+  overflow: hidden;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userNickName {
+  font-size: 32rpx;
+  margin-left: 24rpx;
+}
+
+.useronline {
+  font-size: 24rpx;
+  margin-top: 14rpx;
+}
+
+.usersorce {
+  margin-top: 300rpx;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120rpx;
+  background-color: #fff;
+  /* box-shadow: 0px 7px 7px -7px #5e5e5e; */
+}
+
+.sorceitems {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 249rpx;
+  height: 100%;
+  border: 1rpx solid #fbfbfb;
+}
+
+.sorceitems view:nth-child(1) {
+  color: #333;
+  font-size: 36rpx;
+  margin-bottom: 14rpx;
+}
+
+.sorceitems view:nth-child(2) {
+  color: #999;
+  font-size: 24rpx;
+}
+
+.listgroup {
+  margin-top: 16rpx;
+  width: 100%;
+  height: 500rpx;
+}
+
+.list {
+  height: 100rpx;
+  border-top: 1rpx solid #fbfbfb;
+  border-bottom: 1rpx solid #fbfbfb;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-wrap: row nowrap;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+}
+
+.clickstyle {
+  background-color: rgba(255, 160, 0, 0.1);
+  color: #fff;
+}
+
+.lefttext {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.righttext {
+  margin-left: 470rpx;
+  color: #b9b9b9;
+  font-size: 24rpx;
+}
+
+.lefticon {
+  margin: 0rpx 20rpx 0 24rpx;
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.righticon1 {
+  margin-left: 538rpx;
+  height: 32rpx;
+  width: 32rpx;
+}
+
+.righticon2 {
+  margin-left: 510rpx;
+  height: 32rpx;
+  width: 32rpx;
+}
+
+.identification {
+  margin-left: 482rpx;
+  height: 48rpx;
+  width: 48rpx;
+}
