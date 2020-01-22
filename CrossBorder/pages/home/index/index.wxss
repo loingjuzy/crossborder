@@ -1,0 +1,216 @@
+/* pages/home/index.wxss */
+
+/* ==================
+         搜索
+ ==================== */
+
+.search {
+  width: 100%;
+  height: 80rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.scan {
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.searchright {
+  margin: 0 24rpx 0 24rpx;
+  width: 640rpx;
+  height: 60rpx;
+  border: 2rpx solid #f0f0f0;
+  border-radius: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.glass {
+  margin: 0 24rpx 0 16rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.searchright input {
+  width: 100%;
+  height: 300rpx;
+}
+
+.searchtip {
+  color: rgba(153, 153, 153, 1);
+  font-size: 24rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+
+
+/* ==================
+         轮播
+ ==================== */
+
+.swiper{
+  /* position: relative; */
+  margin-top: 80rpx;
+}
+
+/* ==================
+         品牌列表
+ ==================== */
+
+.brandlist {
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  /* align-items: center; */
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  width: 20%;
+  height: 170rpx;
+  position: relative;
+  /* border:1rpx solid red; */
+}
+
+.brandicon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  border: 1rpx solid #f1f2f3;
+  
+}
+
+.hot {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 5rpx;
+  top: 0rpx;
+
+  /* border-radius: 50rpx; */
+  /* border: 1rpx solid #f1f2f3; */
+}
+
+.brandname {
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+}
+
+.exchange {
+  margin:  0 3% 24rpx;
+  width: 94%;
+  height: 300rpx;
+  border: 1rpx solid #f0f0f0;
+  border-radius: 10rpx;
+  /* border:1rpx solid red; */
+}
+
+.exchangetitle {
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* background: linear-gradient(to right, #f43f3b, #ec008c); */
+  background: linear-gradient(45deg, #ff9700, #ed1c24);
+  border-radius: 10rpx 10rpx 0rpx 0rpx;
+  color: #fff;
+}
+
+.exchangecontent {
+  margin: 15rpx 0 15rpx 24rpx;
+}
+
+.CNY {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  border: 1rpx solid #f0f0f0;
+  position: relative;
+}
+
+.CNY image {
+  margin: 0 12rpx 0;
+  width: 80rpx;
+  height: 60rpx;
+}
+
+.CNYcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CNYtext {
+  font-size: 32rpx;
+  color: #666;
+  position: absolute;
+  right: 12rpx;
+}
+
+.HKD {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  border: 1rpx solid #f0f0f0;
+  position: relative;
+}
+
+.HKD image {
+  margin: 0 12rpx 0;
+  width: 80rpx;
+  height: 60rpx;
+}
+
+.HKDcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HKDtext {
+  font-size: 32rpx;
+  color: #666;
+  position: absolute;
+  right: 12rpx;
+}
+
+.exchangetime {
+  text-align: center;
+  align-items: center;
+  font-size: 24rpx;
+  height: 40rpx;
+  color: #999;
+}
+
+.globaltitle {
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* background: linear-gradient(to right, #f43f3b, #ec008c); */
+  background: linear-gradient(45deg, #9000ff, #5e00ff);
+  border-radius: 10rpx 10rpx 0rpx 0rpx;
+  color: #fff;
+}
+
+.globalcontent {
+  margin: 15rpx 0 15rpx 24rpx;
+}

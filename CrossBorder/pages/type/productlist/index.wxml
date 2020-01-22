@@ -1,0 +1,36 @@
+<!--pages/type/productlist/index.wxml-->
+<!--头部搜索-->
+<view class="search">
+  <view class="search-center">
+    <image class="glass" src="/pages/images/glass.png" />
+    <view class="search-content">
+      <input placeholder="请输入搜索的商品" placeholder-class="searchtip" />
+      <view class="searchbtn" hover-class="clickstyle">搜索</view>
+    </view>
+  </view>
+</view>
+
+<!--产品列表-->
+<scroll-view scroll-anchoring enable-flex="true" class="productlist" style="height:{{height}}rpx;" 
+scroll-y="true" bindscrolltolower="loadProduct">
+    <view class="product" wx:for="{{productlist}}" wx:key="index" data-productid="{{item.productid}}" bindtap="getProductInfo">
+      <image src="{{item.image}}" />
+      <text>{{item.source}}</text>
+      <view class="content">
+        <view class="price">
+          HK${{item.HKDPrice}}
+        </view>
+        <view class="name">
+          {{item.name}}
+        </view>
+        <view class="brand-visit">
+          <view class="brand">
+            {{item.brand}}
+          </view>
+          <view class="visit">
+            浏览{{item.visit}}次
+          </view>
+        </view>
+      </view>
+    </view>
+</scroll-view>

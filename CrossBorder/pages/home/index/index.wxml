@@ -1,0 +1,79 @@
+<!--pages/home/index.wxml-->
+<!--头部搜索-->
+<view class="search">
+  <view class="searchright">
+    <image class="glass" src="/pages/images/glass.png" />
+    <input placeholder="请输入搜索的商品" placeholder-class="searchtip" disabled/>
+  </view>
+  <image class="scan" src="/pages/images/scan.png" />
+</view>
+
+
+<!--轮播图-->
+<view class="swiper">
+  <i-swiper />
+</view>
+<!--热门品牌-->
+<view class="brandlist">
+  <view wx:for="{{brandList}}" wx:key="index" class="brand">
+    <image class="brandicon" src="{{item.url}}" />
+    <image class="hot" wx:if="{{item.hot}}" src="/pages/images/hot.png" />
+    <view class="brandname">
+      {{item.brand}}
+    </view>
+  </view>
+</view>
+
+
+<view class="exchange">
+  <view class="exchangetitle">
+    <view class="exchangecontent">汇率</view>
+
+  </view>
+  <view class="CNY">
+    <image src="/pages/images/china.jpg" />
+    <view class="CNYcontent">
+      <text style="color:#333;font-size:24rpx;">CNY</text>
+      <text style="color:#999;font-size:16rpx;">人民币</text>
+    </view>
+    <view class="CNYtext">100.00</view>
+
+  </view>
+  <view class="HKD">
+    <image src="/pages/images/hk.jpg" />
+    <view class="HKDcontent">
+      <text style="color:#333;font-size:24rpx;">HKD</text>
+      <text style="color:#999;font-size:16rpx;">港币</text>
+    </view>
+    <view class="HKDtext">113.05</view>
+
+  </view>
+  <view class="exchangetime">数据仅供参考，更新时间:2020-01-21 08:00:00</view>
+</view>
+
+
+<view class="exchange">
+  <view class="globaltitle">
+    <view class="globalcontent">金价</view>
+
+  </view>
+  <view class="CNY">
+    <image src="/pages/images/global.png" />
+    <view class="CNYcontent">
+      <text style="color:#333;font-size:24rpx;">买入</text>
+      <text style="color:#999;font-size:16rpx;">港币/克</text>
+    </view>
+    <view class="CNYtext">100.00</view>
+
+  </view>
+  <view class="HKD">
+    <image src="/pages/images/global.png" />
+    <view class="HKDcontent">
+      <text style="color:#333;font-size:24rpx;">卖出</text>
+      <text style="color:#999;font-size:16rpx;">港币/克</text>
+    </view>
+    <view class="HKDtext">113.05</view>
+
+  </view>
+  <view class="exchangetime">数据仅供参考，更新时间:2020-01-21 08:00:00</view>
+</view>

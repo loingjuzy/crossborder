@@ -1,0 +1,81 @@
+/* pages/type/index.wxss */
+
+.content {
+  display: flex;
+  border-top: 1rpx solid #F0F0F0;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+
+.leftlist {
+  width: 180rpx;
+  /* height: 1106rpx; */
+}
+
+.leftitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+  width: 100%;
+}
+
+.active{
+  background-color: #fff;
+  color:#ffa500;
+  border-left:8rpx solid #ffa500; 
+}
+
+.rightlist {
+  background: #fff;
+  width: 570rpx;
+  /* height: 1106rpx; */
+}
+
+
+.rightitem {
+  display: flex;
+  align-items: center;
+flex-direction: row;
+  justify-content: center;
+  height: 120rpx;
+  /* border-top: 1rpx solid #f1f2f3; */
+}
+
+.lefticon {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left:12rpx;
+}
+
+.text-icon{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 470rpx;
+padding: 0 16rpx;
+border-bottom: 1rpx solid #f1f2f3;
+height: 100%;
+}
+
+
+.name-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.rightname{
+  color: #333;
+  font-size: 30rpx;
+}
+
+.rightnumber{
+  color: #999;
+  font-size: 24rpx;
+}
+
+.righticon{
+    width: 36rpx;
+  height: 36rpx;
+}

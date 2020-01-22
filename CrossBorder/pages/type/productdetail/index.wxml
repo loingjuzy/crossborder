@@ -1,0 +1,21 @@
+<!--pages/type/productdetail/index.wxml-->
+<view class="product">
+  <image src="{{productInfo.image}}" />
+  <text>{{productInfo.source}}</text>
+  <view class="content">
+    <view class="price">
+      HK${{productInfo.HKDPrice}}
+    </view>
+    <view class="name">
+      {{productInfo.name}}
+    </view>
+    <view class="brand-visit">
+      <view class="brand">
+        {{productInfo.brand}}
+      </view>
+      <view class="visit">
+        浏览{{productInfo.visit}}次
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<!--pages/type/index.wxml-->
+<view class="content" style="height:{{height-2}}rpx;">
+  <scroll-view scroll-y="true" class="leftlist" style="height:{{height-2}}rpx;">
+    <view wx:for="{{typelist}}" wx:key="index" class="leftitem {{item == showitem?'active':''}}" bindtap="changeItem" data-navigation="{{item}}">
+      {{item}}
+    </view>
+  </scroll-view>
+  <scroll-view class="rightlist" scroll-y="true" style="height:{{height-2}}rpx;">
+    <view wx:for="{{brandlist}}" wx:key="index" class="rightitem" data-id="{{item.name}}" bindtap="getProductList">
+      <image class="lefticon" src="/pages/images/logo/more.png" />
+      <view class="text-icon">
+        <view class="name-number">
+          <view class="rightname">{{item.name}}</view>
+          <view class="rightnumber">数量：{{item.number}}</view>
+        </view>
+        <image class="righticon" src="/pages/images/right.png" />
+      </view>
+    </view>
+  </scroll-view>
+
+</view>
